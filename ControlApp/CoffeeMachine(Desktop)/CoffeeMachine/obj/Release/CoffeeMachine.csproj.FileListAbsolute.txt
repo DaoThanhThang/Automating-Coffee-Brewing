@@ -1,0 +1,24 @@
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\CoffeeMachine.csproj.AssemblyReference.cache
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\Automating_Coffee_Drewing.History.resources
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\QuickSyncPay.LoginForm.resources
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\WinFormsApp1.MainControl.resources
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\CoffeeMachine.Properties.Resources.resources
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\CoffeeMachine.csproj.GenerateResource.cache
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\CoffeeMachine.csproj.CoreCompileInputs.cache
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\bin\Release\CoffeeMachine.exe.config
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\bin\Release\CoffeeMachine.exe
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\bin\Release\CoffeeMachine.pdb
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\CoffeeMachine.exe
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\New folder\CoffeeMachine\CoffeeMachine\obj\Release\CoffeeMachine.pdb
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\bin\Release\CoffeeMachine.exe.config
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\bin\Release\CoffeeMachine.exe
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\bin\Release\CoffeeMachine.pdb
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\CoffeeMachine.csproj.AssemblyReference.cache
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\Automating_Coffee_Drewing.History.resources
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\QuickSyncPay.LoginForm.resources
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\WinFormsApp1.MainControl.resources
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\CoffeeMachine.Properties.Resources.resources
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\CoffeeMachine.csproj.GenerateResource.cache
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\CoffeeMachine.csproj.CoreCompileInputs.cache
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\CoffeeMachine.exe
+D:\Users\thang\Documents\GitHub\Automating-Coffee-Brewing\ControlApp\CoffeeMachine(Desktop)\CoffeeMachine\obj\Release\CoffeeMachine.pdb
