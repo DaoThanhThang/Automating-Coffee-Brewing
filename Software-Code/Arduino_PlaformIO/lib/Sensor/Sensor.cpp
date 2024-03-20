@@ -32,19 +32,19 @@ extern bool sensorCheck(){
   int distance_3 = readDistance(TRIGGER_PIN_3, ECHO_PIN_3);//SUGAR
   int distance_4 = readDistance(TRIGGER_PIN_4, ECHO_PIN_4);//COFFEE
   if (distance_1 > DISTANCE_THRESHOLD_1){
-    Serial.print("LOW INVENTORY WATER");
+    Serial.write("LOW INVENTORY WATER");
     return false;
   }  
   if (distance_2 > DISTANCE_THRESHOLD_2){
-    Serial.print("LOW INVENTORY MILK");
+    Serial.write("LOW INVENTORY MILK");
     return false;
   }
   if (distance_3 > DISTANCE_THRESHOLD_3){
-    Serial.print("LOW INVENTORY SUGAR");
+    Serial.write("LOW INVENTORY SUGAR");
     return false;
   }
   if (distance_4 > DISTANCE_THRESHOLD_4){
-    Serial.print("LOW INVENTORY COFFEE");
+    Serial.write("LOW INVENTORY COFFEE");
     return false;
   }
   return true;
