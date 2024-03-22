@@ -34,8 +34,8 @@ void setupWiFiConnection() {
     const char* password = "YourPassword"; // Replace "YourPassword" with your WiFi password
     IPAddress staticIP(192, 168, 1, 100); // Static IP address assigned to ESP32
     IPAddress gateway(192, 168, 1, 1);    // Network gateway
-    IPAddress subnet(255, 255, 255, 0);   // Subnet mask of the network
-
+    IPAddress subnet(255, 255, 255, 0);   // Subnet mask of the network    
+    WiFiServer server(80);                 //port 80
     // Configure WiFi network settings
     WiFi.config(staticIP, gateway, subnet);
     WiFi.begin(ssid, password);
