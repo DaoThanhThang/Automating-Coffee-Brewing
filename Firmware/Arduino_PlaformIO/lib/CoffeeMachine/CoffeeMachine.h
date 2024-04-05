@@ -3,8 +3,11 @@
 #define COFFEEMACHINE_H
 
 #include "Arduino.h" // Include the Arduino library to use Arduino's basic functions
-#include "LCD_I2C.h"// Include the LCD_I2C header file
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
 #include "Sensor.h"// Include the Sensor header file
+
+
 /**
  * @brief Structure to store coffee brewing recipes
  */
@@ -85,5 +88,12 @@ void inventoryLow();
  * @return True if connection is available, false otherwise
  */
 bool connectionCheck();
-
+/**
+ * @brief Display dashboard of the Machine
+ */
+void lcdBegin();
+/**
+ * @brief Display check inventory of the Machine
+ */
+void checkInventory();
 #endif

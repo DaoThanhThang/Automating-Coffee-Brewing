@@ -12,7 +12,6 @@
 
 #include <Arduino.h>
 #include <Wire.h>
-#include "LCD_I2C.h"// Include the LCD_I2C header file
 #include "CoffeeMachine.h"// Include the CoffeeMachine header file
 #include "Sensor.h"// Include the Sensor header file
 
@@ -33,7 +32,6 @@ void setup() {
  * checks sensor status, and brews coffee accordingly.
  */
 void loop() {
-  if(connectionCheck()) { /**< Check serial connection */
       String data = Serial.readStringUntil('\r'); /**< Read data from serial port */
       getString(); /**< Extract individual components from input string */
       if (!makeCoffeeFlag) {/**< Check if coffee brewing process is not ongoing */
@@ -43,5 +41,5 @@ void loop() {
         makeCoffeeFlag = true; /**< Set coffee brewing flag */
       }
     }
-  }
+  
 }

@@ -124,21 +124,30 @@ namespace WinFormsApp1
             try
             {
                 string dataToSend = (string)data;
-                IPAddress esp32IPAddress = new IPAddress(new byte[] { 192, 168, 1, 100 });
 
-                using (TcpClient client = new TcpClient(esp32IPAddress.ToString(), 80))
+                using (TcpClient client = new TcpClient())
                 {
-                    using (NetworkStream stream = client.GetStream())
+                    client.Connect("192.168.3.100", 8000);
+
+                    if (client.Connected)
                     {
-                        byte[] buffer = Encoding.ASCII.GetBytes(dataToSend);
-                        stream.Write(buffer, 0, buffer.Length);
+                        using (NetworkStream stream = client.GetStream())
+                        {
+                            byte[] buffer = Encoding.ASCII.GetBytes(dataToSend);
+                            stream.Write(buffer, 0, buffer.Length);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Failed to establish connection.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error sending data: " + ex.Message);
+                Console.WriteLine("An error occurred: " + ex.Message);
             }
+
         }
 
         /**
@@ -149,7 +158,7 @@ namespace WinFormsApp1
         {
             try
             {
-                TcpListener listener = new TcpListener(IPAddress.Any, 80);
+                TcpListener listener = new TcpListener(IPAddress.Any, 12345);
                 listener.Start();
 
                 while (true)

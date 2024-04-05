@@ -6,8 +6,7 @@
  */
 #include "CoffeeMachine.h"// Include the CoffeeMachine header file
 
-LCD_I2C lcd; 
-
+LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
 // Define specific coffee brewing recipes with their respective values
 CoffeeRecipe espresso = {99, 0, 0, 33}; // Espresso
 CoffeeRecipe americano = {198, 0, 0, 50}; // Americano
@@ -123,27 +122,13 @@ void controlRelay(int RELAY_PIN,int value) {
 void lcdStart(){
   lcd.init();                    
   lcd.backlight(); 
-  lcd.setCursor(0,0);
-  lcd.print("PLEASE WAIT...");
-  lcd.setCursor(0,1);
-  lcd.print(".....................");
-  delay(2000);
-  lcd.clear();
-  delay(1000);
-  lcd.setCursor(0,0);
-  lcd.print("CHECK INVENTORY");  
-  lcd.setCursor(0,1);
-  lcd.print(".....................");
-  if(sensorCheck()){    
-    inventoryLow();
-  }
-  delay(2000);
-  lcd.clear();
-  delay(1000);
+  lcdBegin();
+  checkInventory();
   lcd.setCursor(0,0);
   lcd.print("CHECK CONNECTION");
   lcd.setCursor(0,1);
   lcd.print(".....................");
+ connectionCheck();
   delay(2000);    
 }
 
@@ -151,12 +136,33 @@ void lcdStart(){
  * @brief Display low inventory message on LCD screen
  */
 void inventoryLow(){
+  lcd.clear();
   lcd.setCursor(0,0);
   lcd.print("INVENTORY LOW");  
   lcd.setCursor(0,1);
-  lcd.print("PLEASE REFILL");
+  lcd.print("PLEASE REFILL....");
+  delay(2000);
+  lcd.clear();
 }
-
+void lcdBegin(){
+  lcd.setCursor(0,0);
+  lcd.print("PLEASE WAIT...");
+  lcd.setCursor(0,1);
+  lcd.print(".............");
+  delay(2000);
+  lcd.clear();
+}
+void checkInventory(){
+  lcd.setCursor(0,0);
+  lcd.print("CHECK INVENTORY");  
+  lcd.setCursor(0,1);
+  lcd.print("................");
+  if(sensorCheck()){    
+    inventoryLow();
+  }
+    delay(2000);
+    lcd.clear();
+}
 /**
  * @brief Check connection status
  * @return True if connection is available, false otherwise
@@ -167,6 +173,7 @@ bool connectionCheck(){
       delay(1000);
       lcd.setCursor(0, 0);
       lcd.print("CONNECTION ERROR");
+      delay(1000);
       return false;
   }
   return true;

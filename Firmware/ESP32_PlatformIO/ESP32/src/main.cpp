@@ -30,9 +30,9 @@ void setupSerialCommunication() {
  */
 void setupWiFiConnection() {
     // Define WiFi network settings
-    const char* ssid = "YourSSID"; // Replace "YourSSID" with your WiFi SSID
-    const char* password = "YourPassword"; // Replace "YourPassword" with your WiFi password
-    IPAddress staticIP(192, 168, 1, 100); // Static IP address assigned to ESP32
+    const char* ssid = "Thanh Tu"; // Replace "YourSSID" with your WiFi SSID
+    const char* password = "0983966299"; // Replace "YourPassword" with your WiFi password
+    IPAddress staticIP(192, 168, 3, 100); // Static IP address assigned to ESP32
     IPAddress gateway(192, 168, 1, 1);    // Network gateway
     IPAddress subnet(255, 255, 255, 0);   // Subnet mask of the network    
     WiFiServer server(80);                 //port 80
@@ -67,11 +67,10 @@ void beginServer() {
 void sendToWinForms(String data) {
     // Connect to the WinForms application via TCP connection
     WiFiClient client;
-    if (client.connect("winforms_ip_address", 8080)) { // Replace "winforms_ip_address" with the IP address of the WinForms application
         client.print(data);
         client.flush();
         client.stop();
-    }
+    
 }
 
 /**
